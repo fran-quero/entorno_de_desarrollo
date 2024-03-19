@@ -1,5 +1,6 @@
 package app;
 
+import modelos.Circulo;
 import modelos.Rectangulo;
 
 public class Main {
@@ -12,6 +13,12 @@ public class Main {
 		
 		System.out.println(rectangulo.calcularArea()+"\n"+rectangulo.calcularPerimetro()+"\n"+rectangulo2.calcularArea()
 		+"\n"+rectangulo2.calcularPerimetro());
+		
+		
+		Circulo c1=new Circulo(3);
+	
+		System.out.println(c1.calcularArea());
+		System.out.println(c1.calcularPerimetro());
 		
 		
 	}
