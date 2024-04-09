@@ -2,16 +2,18 @@ package modelos;
 import java.util.*;
 
 /**
+ * @author FranQuero
  * 
+ * Clase Rectangulo. Permite crear rectangulos y calcular su area y perimetro
  */
-public class Rectangulo {
+public class Rectangulo extends Figura{
  
     
     private int base;
     private int altura;
 
     /**
-     * Constructor por defecto en altura 1 base 1
+     * Constructor por defecto. Crea un rectangulo con base y altura 1, en metros
      */
     public Rectangulo() {
         this.base=1;
@@ -19,60 +21,54 @@ public class Rectangulo {
     }
 
     /**
-     * @param base 
-     * @param altura
+     * Constructor que crea un rectangulo que recibe la base y la altura especificadas, en metros
+     * 
+     * @param base 		la base del rectangulo, en metros
+     * @param altura 	la altura del rectangulo, en metros
      */
     public Rectangulo(int base, int altura) {
         this.base=base;
         this.altura=altura;
     }
 
-    /**
-     * @return
-     */
+    
     public int getBase() {
         // TODO implement here
         return this.base;
     }
 
-    /**
-     * @return
-     */
+    
     public int getAltura() {
         // TODO implement here
         return this.altura;
     }
 
-    /**
-     * @param base
-     */
+    
     public void setBase(int base) {
         this.base=base;
     }
 
-    /**
-     * @param altura
-     */
+    
     public void setAltura(int altura) {
         this.altura=altura;
     }
 
     /**
-     * Devuelve el area del rectangulo, segun la formula: area*altura
-     * @return
+     * @see modelos.Figura#area()
      */
-    public int calcularArea() {
+    @Override
+    public double area() {
         // TODO implement here
-        return base*altura;
+        return this.base*this.altura;
     }
-
+    
     /**
-     * Devuelve perimetro de rectangulo, segun la formula:  2*area+2*altura
-     * @return
+     * @see modelos.Figura#perimetro()
      */
-    public int calcularPerimetro() {
+    @Override
+    public double perimetro() {
         // TODO implement here
-        return (2*base)+(2*altura);
+        return (2*this.base)+(2*this.altura);
     }
 
 }

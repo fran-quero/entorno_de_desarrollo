@@ -12,10 +12,10 @@ public class Main {
 		Rectangulo rectangulo=new Rectangulo();
 		Rectangulo rectangulo2=new Rectangulo(20,10);
 		
-		System.out.println("Area rectangulo: "+rectangulo.calcularArea()+"\nPerimetro rectangulo: "+rectangulo.calcularPerimetro()+
+		/*System.out.println("Area rectangulo: "+rectangulo.calcularArea()+"\nPerimetro rectangulo: "+rectangulo.calcularPerimetro()+
 				"\nArea rectangulo 2: "+rectangulo2.calcularArea()
 				+"\nPerimetro rectangulo 2: "+rectangulo2.calcularPerimetro());
-		System.out.println();
+		System.out.println();*/
 		
 		Circulo c1=new Circulo(3);
 	
@@ -24,7 +24,7 @@ public class Main {
 		
 		Triangulo r=new Triangulo(10,5);
 		
-		System.out.println("Area rectangulo: "+r.calcularArea());
+		System.out.println("Area triangulo: "+r.calcularArea());
 		
 		
 	}
