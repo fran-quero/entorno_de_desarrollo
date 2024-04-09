@@ -11,11 +11,18 @@ class TestAlgoritmos {
 
 
 	@Test
-	void testAlgoritmo() {
+	void testSumatorio() {
 		int numEsperado=6;
 		int numObtenido=Algoritmos.sumatorio(3);
 		assertEquals(numEsperado, numObtenido);
 		
+	}
+	
+	@Test
+	void testFactorial() {
+		int numEsperado=24;
+		int numObtenido= Algoritmos.factorial(4);
+		assertEquals(numEsperado, numObtenido);
 	}
 
 }
